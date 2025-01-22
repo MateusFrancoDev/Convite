@@ -16,5 +16,5 @@ export default function complementarEvento(eventoParcial: Partial <Evento>): Eve
     publicoEsperado: +(eventoParcial.publicoEsperado ?? 1),
   } as Evento;
 
-  return evento;
+  return evento; 
 }
