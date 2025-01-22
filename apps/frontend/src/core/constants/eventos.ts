@@ -42,8 +42,4 @@ const eventos: Evento[] = [
   },
 ];
 
-eventos.forEach((evento) => {
-  evento.convidados.forEach((convidado) => {
-    convidado.id = Id.novo();
-  });
-});
+export { eventos };
