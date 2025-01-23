@@ -1,6 +1,6 @@
 'use client'
 import DashboardEvento from "@/components/evento/dashbordEvento";
-import FormSenhaEvento from "@/components/evento/FormSenhaEvento";
+import FormSenhaEvento from "@/components/evento/formSenhaEvento";
 import { Convidado, Evento, eventos } from "@/core";
 import { use, useEffect, useState } from "react";
 
