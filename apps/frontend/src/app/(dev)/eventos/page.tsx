@@ -17,7 +17,7 @@ export default function PaginaEventos() {
             <p className="flex-1 text-sm text-gray-500">{evento.descricao}</p> 
             <QRCode value={JSON.stringify({id: evento.id, senha: evento.senha})} className="w-44 h-44" />
           <div className="flex gap-5">
-          <Link href={`/eventos/admin/${evento.id}/${evento.senha}`} className="flex-1 botao vermelho">
+          <Link href={`/evento/admin/${evento.id}/${evento.senha}`} className="flex-1 botao vermelho">
             Admin
             </Link>
             <Link href={`/convite/${evento.alias}`} className="flex-1 botao verde">
