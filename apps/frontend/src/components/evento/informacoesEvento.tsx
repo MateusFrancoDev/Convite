@@ -5,7 +5,7 @@ export interface InformacoesEventoProps {
   evento: Evento;
   className?: string;
   label: string;
-  children: React.ReactNode;
+  children: any;
 }
 
 export default function InformacoesEvento(props: InformacoesEventoProps) {
