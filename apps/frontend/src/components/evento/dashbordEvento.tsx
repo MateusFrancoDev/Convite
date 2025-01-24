@@ -2,6 +2,7 @@ import { Convidado, Evento } from "@/core";
 import  InformacoesEvento  from "./informacoesEvento";
 import AcessarViaQrCode from "./acessarViaQrCode";
 import Estatistica from "../shared/estatistica";
+import ListaConvidado from "./listaConvidado";
 
 export interface DashboardEventoProps {
   evento: Evento;
@@ -22,6 +23,19 @@ export default function DashboardEvento(props: DashboardEventoProps) {
         <Estatistica texto="Confirmações:" valor={props.presentes.length} imagem="/icons/confirmados.svg"/>
         <Estatistica texto="Total Confirmados:" valor={props.totalGeral} imagem="/icons/pessoas.svg"/>
       </div>
+
+    <button className="botao azul self-end mt-12">
+      <span>Atualizar Lista de Convidados</span>
+    </button>
+
+      <span className="flex py-2 text-xl font-bold text-white/80">
+        Convidados que confirmaram presença
+      </span>
+      <ListaConvidado convidados={props.presentes}/>
+      <span className="flex py-2 text-xl font-bold text-white/80">
+        Convidados que não confirmaram presença
+      </span>
+      <ListaConvidado convidados={props.ausentes}/>
     </div>
   )
 }
