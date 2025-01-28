@@ -1,4 +1,4 @@
-import { Convidado, Evento } from "@/core";
+import { Convidado, Evento } from "core";
 import  InformacoesEvento  from "./informacoesEvento";
 import AcessarViaQrCode from "./acessarViaQrCode";
 import Estatistica from "../shared/estatistica";
