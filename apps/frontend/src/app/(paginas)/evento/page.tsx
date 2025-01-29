@@ -3,5 +3,5 @@ export default function PaginaEvento() {
     <div>
       <span>Evento</span>
     </div>
-  )
+  );
 }

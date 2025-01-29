@@ -11,5 +11,5 @@ export default function validarConvidado(evento: Partial<Convidado>): string[] {
     erros.push("Email é obrigatório");
   }
 
-  return erros; 
+  return erros;
 }

@@ -27,13 +27,13 @@ export default function validarEvento(evento: Partial<Evento>): string[] {
     erros.push("Público esperado é obrigatório");
   }
 
-  if(!evento.imagem) {
+  if (!evento.imagem) {
     erros.push("Imagem é obrigatória");
   }
 
-  if(!evento.imagemBackground) {
-    erros.push("Imagem de fundo é obrigatória");  
+  if (!evento.imagemBackground) {
+    erros.push("Imagem de fundo é obrigatória");
   }
 
-  return erros; 
+  return erros;
 }

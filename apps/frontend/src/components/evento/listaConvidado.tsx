@@ -9,10 +9,9 @@ export default function ListaConvidado(props: ListaConvidadoProps) {
   return (
     <div>
       <ul className="flex flex-col gap-2">
-      {props.convidados.map((convidado) => (
-        <ConvidadoItem key={convidado.id} convidado={convidado} />
-      ))}
-
+        {props.convidados.map((convidado) => (
+          <ConvidadoItem key={convidado.id} convidado={convidado} />
+        ))}
       </ul>
     </div>
   );

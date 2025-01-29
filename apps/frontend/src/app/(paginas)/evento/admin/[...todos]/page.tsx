@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import DashboardEvento from "@/components/evento/dashbordEvento";
 import FormSenhaEvento from "@/components/evento/formSenhaEvento";
 import { Convidado, Evento, eventos } from "core";
@@ -8,14 +8,15 @@ export default function PaginaAdminEvento(props: any) {
   const params: any = use(props.params);
   const id = params.todos[0];
   const [evento, setEvento] = useState<Evento | null>(null);
-  const [senha,setSenha] = useState<string | null>(params.todos[1] ?? null);
+  const [senha, setSenha] = useState<string | null>(params.todos[1] ?? null);
 
   const presentes = evento?.convidados.filter((c) => c.confirmado) ?? [];
   const ausentes = evento?.convidados.filter((c) => !c.confirmado) ?? [];
 
-  const totalGeral = presentes.reduce((total: number, convidado: Convidado) => {
-    return total + convidado.qtdeAcompanhantes + 1;
-  }, 0) ?? 0;
+  const totalGeral =
+    presentes.reduce((total: number, convidado: Convidado) => {
+      return total + convidado.qtdeAcompanhantes + 1;
+    }, 0) ?? 0;
 
   function carregarEvento() {
     const evento = eventos.find((ev) => ev.id === id && ev.senha === senha);
@@ -28,8 +29,16 @@ export default function PaginaAdminEvento(props: any) {
 
   return (
     <div className="flex flex-col items-center gap-5">
-      {evento ? <DashboardEvento evento={evento} presentes={presentes} ausentes={ausentes} totalGeral={totalGeral}/> : <FormSenhaEvento />}
+      {evento ? (
+        <DashboardEvento
+          evento={evento}
+          presentes={presentes}
+          ausentes={ausentes}
+          totalGeral={totalGeral}
+        />
+      ) : (
+        <FormSenhaEvento />
+      )}
     </div>
   );
-
 }

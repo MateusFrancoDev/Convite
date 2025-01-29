@@ -13,8 +13,8 @@ export default function InformacoesEvento(props: InformacoesEventoProps) {
   return (
     <div className={`flex flex-col gap-2 ${props.className ?? ""}`}>
       <div className="flex-1 flex items-center gap-4 border border-gray-300 px-6 py-3 rounded-md">
-          <span className="text-2xl font-black">{evento.alias}</span>
-          <span className="text-xl text-gray-300">{evento.nome}</span>
+        <span className="text-2xl font-black">{evento.alias}</span>
+        <span className="text-xl text-gray-300">{evento.nome}</span>
       </div>
       <div className="flex gap-2">
         <Informacao label="Data:">
@@ -30,5 +30,5 @@ export default function InformacoesEvento(props: InformacoesEventoProps) {
         <Informacao label="Descrição:">{evento.descricao}</Informacao>
       </div>
     </div>
-  )
+  );
 }

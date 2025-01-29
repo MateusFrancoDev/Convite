@@ -10,8 +10,10 @@ const eventos: Evento[] = [
     data: new Date("2021-12-10T19:00:00Z"),
     local: "Osasco, SP",
     descricao: "Vire um desenvolvedor Fullstack.",
-    imagem: "https://coodesh.com/blog/wp-content/uploads/2021/03/papel-de-um-fullstack-scaled.jpg",
-    imagemBackground:"https://t4.ftcdn.net/jpg/04/61/47/03/360_F_461470323_6TMQSkCCs9XQoTtyer8VCsFypxwRiDGU.jpg",
+    imagem:
+      "https://coodesh.com/blog/wp-content/uploads/2021/03/papel-de-um-fullstack-scaled.jpg",
+    imagemBackground:
+      "https://t4.ftcdn.net/jpg/04/61/47/03/360_F_461470323_6TMQSkCCs9XQoTtyer8VCsFypxwRiDGU.jpg",
     publicoEsperado: 100,
     convidados: [
       {
@@ -36,7 +38,7 @@ const eventos: Evento[] = [
         email: "monica@gmail.com",
         confirmado: true,
         possuiAcompanhantes: true,
-        qtdeAcompanhantes: 2, 
+        qtdeAcompanhantes: 2,
       },
     ],
   },
@@ -47,9 +49,12 @@ const eventos: Evento[] = [
     nome: "Oktoberfest",
     data: new Date("2021-12-10T19:00:00Z"),
     local: "Santa Catarina, SC",
-    descricao: "Embora possa ser inesperado encontrar uma das maiores Oktoberfests do mundo no Brasil",
-    imagem: "https://www.oktoberfestsantacruz.com.br/wp-content/uploads/2023/10/Desfile1_Credito-Rodrigo-Assmann-1.jpg",
-    imagemBackground:"https://t4.ftcdn.net/jpg/04/61/47/03/360_F_461470323_6TMQSkCCs9XQoTtyer8VCsFypxwRiDGU.jpg",
+    descricao:
+      "Embora possa ser inesperado encontrar uma das maiores Oktoberfests do mundo no Brasil",
+    imagem:
+      "https://www.oktoberfestsantacruz.com.br/wp-content/uploads/2023/10/Desfile1_Credito-Rodrigo-Assmann-1.jpg",
+    imagemBackground:
+      "https://t4.ftcdn.net/jpg/04/61/47/03/360_F_461470323_6TMQSkCCs9XQoTtyer8VCsFypxwRiDGU.jpg",
     publicoEsperado: 100,
     convidados: [
       {
@@ -74,7 +79,7 @@ const eventos: Evento[] = [
         email: "monica@gmail.com",
         confirmado: true,
         possuiAcompanhantes: true,
-        qtdeAcompanhantes: 2, 
+        qtdeAcompanhantes: 2,
       },
     ],
   },
@@ -85,9 +90,12 @@ const eventos: Evento[] = [
     nome: "Rock in Rio",
     data: new Date("2021-12-10T19:00:00Z"),
     local: "Rio, RJ",
-    descricao: "O Rock in Rio é um dos maiores e mais conhecidos festivais de música do mundo, destacando-se especialmente no gênero do rock, mas também abrangendo uma variedade de estilos musicais",
-    imagem: "https://visitrio.com.br/wp-content/uploads/2024/06/40-Anos-de-Rock-in-Rio-Reviva-os-shows-iconicos-e-prepare-se-para-a-edicao-de-aniversario.jpg",
-    imagemBackground:"https://t4.ftcdn.net/jpg/04/61/47/03/360_F_461470323_6TMQSkCCs9XQoTtyer8VCsFypxwRiDGU.jpg",
+    descricao:
+      "O Rock in Rio é um dos maiores e mais conhecidos festivais de música do mundo, destacando-se especialmente no gênero do rock, mas também abrangendo uma variedade de estilos musicais",
+    imagem:
+      "https://visitrio.com.br/wp-content/uploads/2024/06/40-Anos-de-Rock-in-Rio-Reviva-os-shows-iconicos-e-prepare-se-para-a-edicao-de-aniversario.jpg",
+    imagemBackground:
+      "https://t4.ftcdn.net/jpg/04/61/47/03/360_F_461470323_6TMQSkCCs9XQoTtyer8VCsFypxwRiDGU.jpg",
     publicoEsperado: 100,
     convidados: [
       {
@@ -112,7 +120,7 @@ const eventos: Evento[] = [
         email: "monica@gmail.com",
         confirmado: true,
         possuiAcompanhantes: true,
-        qtdeAcompanhantes: 2, 
+        qtdeAcompanhantes: 2,
       },
     ],
   },

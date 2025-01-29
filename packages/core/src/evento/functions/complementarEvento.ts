@@ -2,7 +2,9 @@ import { Id, Senha } from "../../shared";
 import Evento from "../model/evento";
 import validarEvento from "./validarEvento";
 
-export default function complementarEvento(eventoParcial: Partial <Evento>): Evento {
+export default function complementarEvento(
+  eventoParcial: Partial<Evento>,
+): Evento {
   const erros = validarEvento(eventoParcial);
 
   if (erros.length) {
@@ -16,5 +18,5 @@ export default function complementarEvento(eventoParcial: Partial <Evento>): Eve
     publicoEsperado: +(eventoParcial.publicoEsperado ?? 1),
   } as Evento;
 
-  return evento; 
+  return evento;
 }

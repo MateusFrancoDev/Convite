@@ -13,7 +13,7 @@ export default function Estatistica(props: EstatisticaProps) {
         <span className="font-light text-zinc-400">{props.texto}</span>
         <span className="mtext-2xl font-black">{props.valor}</span>
       </div>
-        <Image src={props.imagem} width={80} height={80} alt="Icon"/>
+      <Image src={props.imagem} width={80} height={80} alt="Icon" />
     </div>
-  )
+  );
 }

@@ -1,4 +1,3 @@
-
 export interface InformacaoProps {
   label: string;
   children: null;
@@ -10,5 +9,5 @@ export default function Informacao(props: InformacaoProps) {
       <span className="text-zinc-400 font-bold">{props.label}</span>
       <div className="text-xl">{props.children}</div>
     </div>
-  )
+  );
 }

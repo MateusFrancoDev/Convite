@@ -4,5 +4,5 @@ export default function PaginaConvite(props: any) {
     <div>
       <span>{props.params.alias}</span>
     </div>
-  )
+  );
 }

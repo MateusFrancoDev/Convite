@@ -3,5 +3,5 @@ export default function FormSenhaEvento() {
     <div>
       <span>FormSenhaEvento</span>
     </div>
-  )
+  );
 }

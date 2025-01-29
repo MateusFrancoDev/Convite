@@ -1,9 +1,9 @@
-import { Righteous } from 'next/font/google';
-import Image from 'next/image';
-import Link from 'next/link';
+import { Righteous } from "next/font/google";
+import Image from "next/image";
+import Link from "next/link";
 
 const fonte = Righteous({
-  subsets: ['latin'],
+  subsets: ["latin"],
   weight: "400",
 });
 
@@ -17,4 +17,4 @@ export default function Logo() {
       </h1>
     </Link>
   );
-};
+}

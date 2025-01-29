@@ -18,9 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={fonte.className}>
-        {children}
-      </body>
+      <body className={fonte.className}>{children}</body>
     </html>
   );
 }
